@@ -1,6 +1,7 @@
 package util;
 
 import model.*;
+import model.experiment.*;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
@@ -46,6 +47,15 @@ public class HibernateUtil {
         configuration.addAnnotatedClass(PrimeMinister.class);
         configuration.addAnnotatedClass(Driver.class);
         configuration.addAnnotatedClass(Car.class);
+
+        configuration.addAnnotatedClass(Attendance.class);
+        configuration.addAnnotatedClass(Classroom.class);
+        configuration.addAnnotatedClass(Module.class);
+        configuration.addAnnotatedClass(ModuleStage.class);
+        configuration.addAnnotatedClass(Schedule.class);
+        configuration.addAnnotatedClass(Student.class);
+        configuration.addAnnotatedClass(Team.class);
+        configuration.addAnnotatedClass(Trainer.class);
 
         configuration.setProperties(settings);
 

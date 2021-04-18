@@ -15,8 +15,8 @@ public class Main {
         //updateEmployeeExample();
         //deleteEmployeeExample();
         //oneToManyExample();
-        //oneToManyFindExample();
-        manyToManyInsertExample();
+        oneToManyFindExample();
+        //manyToManyInsertExample();
     }
 
     private static void manyToManyInsertExample() {
@@ -129,7 +129,6 @@ public class Main {
         List<Employee> employees = employeeDao.findByFirstName("Johnny");
         System.out.println(employees);
     }
-
 
     private static void insertEmployeeExample() {
         Employee employee = new Employee();
